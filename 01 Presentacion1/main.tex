@@ -1,0 +1,74 @@
+\documentclass[aspectratio=169]{beamer}
+% -- Formato
+\input{formatoBeamerPUCE}
+
+% -- Paquetes adicionales
+\usepackage{aleph-comandos}
+
+% -- Comandos extra
+
+
+% -- Datos
+\title{Título de la presentación}
+\subtitle{Subtítulo (opcional)}
+\author{Mat. Andrés Merino, MSc}
+\institute{Carrera de Ciencia de Datos}
+\date{14 de marzo de 2022}
+
+% --- Archivo de bibliografía
+\addbibresource{referencias.bib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Página de título
+\fondo{inicio}
+\begin{frame}[plain]
+\addtocounter{framenumber}{-1}
+    \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Página de contenidos
+\fondo{blanco}
+\begin{frame}[plain]
+    \frametitle{Contendio}
+    \vspace*{-15mm}
+
+    \tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Sección 1
+\include{Secciones/01Seccion1}
+% -- Sección 2
+\include{Secciones/02Seccion2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Página de referencias
+\begin{frame}[t]    
+    \frametitle{Bibliografía}
+    \vspace{-16mm}
+    \nocite{*}
+    \printbibliography
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Página final
+\fondo{final}
+\begin{frame}[plain]
+\begin{center}
+    \color{white}
+    {\Huge\textbf{Gracias}}
+
+    \vspace{1cm}
+    \textcolor{azul}{\textbf{Contacto:}} aemerinot@puce.edu.ec
+\end{center}
+\end{frame}
+
+
+\end{document}
