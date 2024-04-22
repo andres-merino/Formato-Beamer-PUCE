@@ -24,8 +24,6 @@
     \renewcommand{\labelitemi}{$\bullet$}
     \DeclareMathSizes{10}{10.78}{7}{7}
 \fi 
-\WarningFilter{latexfont}{Font shape  `T1/cmtt/regular/n'}
-\WarningFilter{latexfont}{Some font shapes were not available, defaults substituted.}
 
 % -- Espaciado
 \addtolength{\abovedisplayskip}{-2.5mm}
@@ -36,9 +34,7 @@
 \newcommand{\fondo}[1]{
     % Selecciona el fondo
     \setbeamertemplate{background}{\includegraphics[width=\paperwidth]{Fondo/#1}}
-    % Agrega el tamaño, si es celeste colocar -14mm si es blanco -10mm
-    % con un condicional
-    \ifthenelse{\equal{#1}{blanco}}{\addtolength{\headsep}{14mm}}{\addtolength{\headsep}{-14mm}}
+    \ifthenelse{\equal{#1}{blanco}}{\setlength{\headsep}{42pt}}{\setlength{\headsep}{0pt}}
     }
 
 % -- Formato 
@@ -97,7 +93,7 @@
     \setbeamercolor{frame numbering}{fg=white}
     \setbeamerfont{page number in head/foot}{size=\tiny}
     \setbeamertemplate{footline}{
-        \begin{beamercolorbox}[wd=\textwidth, center, sep=15.5mm]{footline}%
+        \begin{beamercolorbox}[wd=\textwidth, center, sep=16.5mm]{footline}%
             \usebeamerfont{page number in head/foot}%
             \usebeamertemplate*{frame numbering}
         \end{beamercolorbox}%

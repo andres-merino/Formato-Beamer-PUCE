@@ -50,23 +50,27 @@ Se definen el ambientes `postitbox` para resaltar textos y el comando `\postitim
 
 ### Pruebas
 
-Este proyecto se ha probado con Tex Live 2023 sin problemas.
+Este proyecto se ha probado con Tex Live 2023. Se tienen los siguientes errores reportados, pendientes:
+
+- No funciona el tipo de letra en compilación XeLaTeX
 
 ## Últimos cambios
 
 ```
+- 2024-04-22
+   - Se arregla un error con el espacio al inicio de la página.
 - 2024-04-18
    - Se agrega el proyecto a GitHub para inicio de control de versiones.
 ```
 
 ## Créditos
 
-Andrés Merino\
-[Proyecto Alephsub0](https://www.alephsub0.org/about/),\
-Docente Investigador\
-Pontificia Universidad Católica del Ecuador\
-aemerinot@gmail.com\
-[![LinkedIn][linkedin-shield]][linkedin-url-aemt]
+**Andrés Merino** (aemerinot@gmail.com) 
+
+- Docente-Investigador en Pontificia Universidad Católica del Ecuador
+- Fundador del [Proyecto Alephsub0](https://www.alephsub0.org/about/)
+  
+  [![LinkedIn][linkedin-shield]][linkedin-url-aemt]
 
 ## Licencia
 
